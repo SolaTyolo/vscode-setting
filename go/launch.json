@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Delve Debug",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "showLog": true,
+            "apiVersion": 2,
+            "trace": "verbose",
+            "envFile": "${fileDirname}/.env",
+            "env": {
+                "GOLANG_PROTOBUF_REGISTRATION_CONFLICT": "warn"
+            }
+        }
+    ]
+}
